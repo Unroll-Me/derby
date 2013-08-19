@@ -113,9 +113,9 @@ headers:
 ---
 
 # Derby
-# 0.3 version &ndash; for current version, see [derbyjs.com](http://derbyjs.com)
+## 0.3 version &ndash; for current version, see [derbyjs.com](http://derbyjs.com)
 
-##For our modifications, see [Derby](https://github.com/Unroll-Me/derby#readme) and [Racer](https://github.com/SLaks/racer#readme).
+###For our modifications, see [Derby](https://github.com/Unroll-Me/derby#readme) and [Racer](https://github.com/SLaks/racer#readme).
 
 <p class="promo">MVC framework making it easy to write realtime, collaborative
 applications that run in both Node.js and browsers.</p>
@@ -190,10 +190,6 @@ expressApp
 
 server.listen 3000
 {% endraw %}{% endhighlight %}
-
-### Add water and...
-
-<iframe src="http://hello.derbyjs.com/" id="hello-iframe" seamless="seamless"> </iframe>
 
 # Introduction
 
@@ -298,41 +294,9 @@ Derby can be used via a dynamic API, as seen in the simple example above.
 
 ## Demos
 
-See [source and installation instructions](https://github.com/codeparty/derby-examples) for the demos
+See [source and installation instructions](https://github.com/codeparty/derby-examples/tree/e2e8d6a0f84) for the demos
 
-### Chat
-
-[http://chat.derbyjs.com/lobby](http://chat.derbyjs.com/lobby)
-
-A simple chat demo. Note that as you edit your name, it updates in realtime.
-Name changes also show up in the page title and other rooms. Check out the
-source in the examples directory to see how these bindings are created
-automatically.
-
-### Todos
-
-[http://todos.derbyjs.com/derby](http://todos.derbyjs.com/derby)
-
-The requisite MVC demo, but collaborative and realtime! Todo items are
-contenteditable fields with support for bold and italics.
-
-### Directory
-
-[http://directory.derbyjs.com/](http://directory.derbyjs.com/)
-
-A simple example of an application with multiple pages.
-
-### Sink
-
-[http://sink.derbyjs.com/](http://sink.derbyjs.com/)
-
-A kitchen-sink style example with random features. Largely used for testing.
-
-### Widgets
-
-[http://widgets.derbyjs.com/](http://widgets.derbyjs.com/)
-
-Test of the components in the [Boot](https://github.com/codeparty/derby-ui-boot/) component library.
+The demos for the 0.3 version are no longer hosted online
 
 ## Disclaimer
 
@@ -340,10 +304,7 @@ Derby and Racer are alpha software. While Derby should work well enough for
 prototyping and weekend projects, it is still undergoing major development.
 APIs are subject to change.
 
-If you have feedback, ideas, or suggestions, please email the [Google
-Group](http://groups.google.com/group/derbyjs). If you are interested in
-contributing, please reach out to [Brian](https://github.com/bnoguchi) and
-[Nate](https://github.com/nateps).
+New projects should use the [0.5 version](http://derbyjs.com).
 
 # Getting started
 
@@ -1336,7 +1297,7 @@ Nonvoid components may also
 
 ### Component libraries
 
-Documentation is forthcoming. Until then, please see the [Widgets example](https://github.com/codeparty/derby-examples/tree/master/widgets) for usage and the [Boot source](https://github.com/codeparty/derby-ui-boot).
+Documentation is forthcoming. Until then, please see the [Widgets example](https://github.com/codeparty/derby-examples/tree/e2e8d6a0f84/widgets) for usage and the [Boot source](https://github.com/codeparty/derby-ui-boot/tree/f04ba2c7e7b).
 
 ## HTML extensions
 
@@ -2034,7 +1995,7 @@ Array methods can only be used on paths set to arrays, null, or undefined. If th
 
 #### OT methods
 
-OT support is experimental, and it is not enabled by default. The OT plugin must be included in order to use OT methods. See the Racer [pad example](https://github.com/codeparty/racer/tree/master/examples/pad) for more info.
+OT support is experimental, and it is not enabled by default. The OT plugin must be included in order to use OT methods. See the Racer [pad example](https://github.com/SLaks/racer/tree/master/examples/pad) for more info.
 
 > ### `previous = `model.ot` ( path, value, [callback] )`
 >
