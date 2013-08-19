@@ -113,6 +113,9 @@ headers:
 ---
 
 # Derby
+# 0.3 version &ndash; for current version, see [derbyjs.com](http://derbyjs.com)
+
+##For our modifications, see [Derby](https://github.com/Unroll-Me/derby#readme) and [Racer](https://github.com/SLaks/racer#readme).
 
 <p class="promo">MVC framework making it easy to write realtime, collaborative
 applications that run in both Node.js and browsers.</p>
