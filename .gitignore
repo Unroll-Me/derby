@@ -1,1 +1,4 @@
 _site
+# Ignore generated files from main branch
+node_modules/
+public/
