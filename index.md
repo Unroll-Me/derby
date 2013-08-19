@@ -1993,44 +1993,6 @@ Array methods can only be used on paths set to arrays, null, or undefined. If th
 >
 > **item:** Returns the item that was moved
 
-#### OT methods
-
-OT support is experimental, and it is not enabled by default. The OT plugin must be included in order to use OT methods. See the Racer [pad example](https://github.com/SLaks/racer/tree/master/examples/pad) for more info.
-
-> ### `previous = `model.ot` ( path, value, [callback] )`
->
-> **path:** Model path to initialize as an OT field
->
-> **value:** A string to use as the initial value of the OT field
->
-> **previous:** Returns the value that was set at the path previously
-
-> ### `obj = `model.otNull` ( path, value, [callback] )`
->
-> **path:** Model path to initialize as an OT field if the path is currently null or undefined
->
-> **value:** A string to use as the initial value of the OT field
->
-> **obj:** Returns the object at the path if it is not null or undefined. Otherwise, returns the new value
-
-> ### model.otInsert` ( path, index, text, [callback] )`
->
-> **path:** Model path to an OT field
->
-> **index:** Position within the current OT field at which to insert
->
-> **text:** String to insert
-
-> ### `deleted = `model.otDel` ( path, index, length, [callback] )`
->
-> **path:** Model path to an OT field
->
-> **index:** Position within the current OT field at which to start deleting
->
-> **length:** Number of characters to delete
->
-> **deleted:** Returns the string that was deleted
-
 ### Events
 
 Models inherit from the standard [Node.js EventEmitter](http://nodejs.org/docs/latest/api/events.html), and they support the same methods: `on`, `once`, `removeListener`, `emit`, etc.
@@ -2196,7 +2158,7 @@ Note that Derby also extends `model.at` to accept a DOM node as an argument. Thi
 
 <blockquote style="background: #E5C3C4; border: 1px solid #E58A8E">
 <h3>WARNING</h3>
-<p>This section is out of date. Please see the <a href="https://github.com/codeparty/racer/blob/master/lib/descriptor/query/README.md">Queries Readme</a> for now.</p>
+<p>This section is out of date. Please see the <a href="https://github.com/SLaks/racer/blob/master/lib/descriptor/query/README.md">Queries Readme</a> for now.</p>
 </blockquote>
 
 Models have access to an expressive, chainable query API. Queries enable a more
