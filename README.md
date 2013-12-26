@@ -41,6 +41,8 @@ Some of these changes have been pull-requested to stock Derby (not all of these 
 Unroll-Me/derby currently has no breaking changes, other than changes involving Racer interaction (which, when used with SLaks/racer, don't break anything).
 
 ## Bugfixes
+ - `this.model.req` now exists in view functions on static views.  
+Note that `this.model` is still empty when rendering static views; to access model data, use `this.ctx` directly.
  - Models containing U+2028 LINE SEPARATOR characters are now serialized correctly
 
 ## New features
