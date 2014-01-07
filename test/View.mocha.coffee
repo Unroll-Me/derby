@@ -500,6 +500,12 @@ describe 'View', ->
       '''
     expect(view.get 'test', {nums: [-4, 8, 0, 2.3, -9]}).to.equal '8,0,2.3,'
 
+  it 'supports view helper functions with complex strings', ->
+    view.fn 'lower', (s) -> s.toLowerCase()
+
+    view.make 'test', '''{{lower('HI "(B,YE)"')}} {lower( "HI '(B,YE)'" )}'''
+    expect(view.get 'test').to.equal '''hi "(b,ye)" <!--$0-->hi '(b,ye)'<!--$$0-->'''
+
   it 'supports x-no-minify', ->
     view.make 'test', '''
       <script type="x-test" x-no-minify>
