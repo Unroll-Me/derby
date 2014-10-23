@@ -4,3 +4,4 @@ test-output.tmp
 *swp
 *un~
 public/gen/
+.idea/
